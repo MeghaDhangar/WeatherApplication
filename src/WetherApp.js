@@ -37,11 +37,9 @@ function WeatherApp() {
       console.log("err", err)
     })
   }
-
   const handleChangeInput = (e) => {
     setInputCity(e.target.value);
   }
-
   const handleSearch = () => {
     getWeatherDetail(inputCity);
   }
@@ -64,7 +62,6 @@ function WeatherApp() {
           <input className='input-text' onChange={handleChangeInput} value={inputCity}></input>
           <button className="btnn" type="button" onClick={handleSearch}>Search</button>
         </div>
-
         <div className='second'>
           <img className="pic" src={img1} alt="Weather Icon" />
           <div className="third">
