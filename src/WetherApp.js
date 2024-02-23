@@ -27,7 +27,6 @@ function WeatherApp() {
   const [data, setData] = useState({})
   const [inputCity, setInputCity] = useState("")
   const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
-
   const getWeatherDetail = (cityName) => {
     const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apikey
     axios.get(apiURL).then((res) => {
