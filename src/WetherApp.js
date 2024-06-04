@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import img1 from './image/sr.png';
-import img2 from './image/pic2.png'
-import img3 from './image/clud.jpg'
 function WeatherApp() {
   const apikey = "d9132312364d6842575847c5579bb6c2"
   const [data, setData] = useState({})
@@ -22,6 +20,7 @@ function WeatherApp() {
   }
   const handleSearch = () => {
     getWeatherDetail(inputCity);
+    setInputCity("");
   }
   useEffect(() => {
     getWeatherDetail("Khategaon");
