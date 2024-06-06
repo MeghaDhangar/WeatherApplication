@@ -50,5 +50,4 @@ function WeatherApp() {
     </div>
   )
 }
-
 export default WeatherApp;
