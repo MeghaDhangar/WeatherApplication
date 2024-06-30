@@ -3,7 +3,9 @@ import WetherApp from './WetherApp';
 function App() {
   return (
     <div className="App">
+
      <WetherApp/>
+
     </div>
   );
 }
